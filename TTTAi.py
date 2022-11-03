@@ -64,7 +64,6 @@ def assignment():
     print('Determining teams...')
     time.sleep(1.5)
     team = random.randint(0,1)
-    team = 0
     if team ==1:
         global p1
         p1 = 'O'
@@ -307,6 +306,7 @@ def checkwin(x):
         print(x+' won!')
         again()
     elif ' ' not in board.values():
+        print('That\'s a draw.')
         again()
     else:
         if x == Pl1:
